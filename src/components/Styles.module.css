@@ -1,0 +1,75 @@
+.TaskCreator {
+  margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Task {
+  margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  border-radius: 2px;
+  padding: 4px 0;
+  height: max-content;
+}
+
+.Task:hover {
+  background-color: #d4d4d4;
+}
+
+.TaskString {
+  width: 255px;
+  height:fit-content;
+  word-wrap: break-word;
+}
+
+.Checkbox {
+  margin: 0 8px;
+}
+
+.Checkbox:hover {
+  cursor: pointer;
+}
+
+.InputText {
+  border: 2px solid #b0b0b0;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin: 0 0 15px 0px;
+  width: 260px;
+  height: 15px;
+}
+
+.InputText:focus {
+  outline: none;
+  border: 2px solid #616161;
+}
+
+.Button {
+  background-color: #848484;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px 0 10px;
+  color: #fff;
+  width: 40px;
+  height: 20px;
+}
+
+.TaskCreator
+.Button {
+  margin: 0 9px 13px 10px;
+}
+
+.Button:hover  {
+  background-color: #6d6d6d;
+  cursor: pointer;
+}
+
+.Button:focus {
+  outline: none;
+}
