@@ -3,7 +3,7 @@ import styles from "./Styles.module.css"
 import { useAction } from '@reatom/react'
 import { addTask } from './atoms';
 
-export function TaskCreator(props) {
+export function TaskCreator() {
   const [inputStr, setInputStr] = useState("");
   const inputRef = useRef();
   

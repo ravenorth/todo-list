@@ -12,7 +12,7 @@ function App() {
   return (
     <div className={styles.App}>
       <p className={styles.Headline}>TODO LIST</p>
-      <TaskCreator list={list}/>
+      <TaskCreator />
       <div className={styles.TaskList}>
         {list.map((task, index) => <Task task={task} index={index} key={uuidv4()} />)}
       </div>
