@@ -1,4 +1,4 @@
-.TaskCreator {
+.taskCreator {
   margin: 5px 0;
   display: flex;
   flex-direction: row;
@@ -6,7 +6,7 @@
   justify-content: flex-end;
 }
 
-.Task {
+.task {
   margin: 5px 0;
   display: flex;
   flex-direction: row;
@@ -18,25 +18,30 @@
   height: max-content;
 }
 
-.Task:hover {
+.task:hover {
   background-color: #d4d4d4;
 }
 
-.TaskString {
-  width: 255px;
+.taskString {
+  width: 250px;
   height:fit-content;
   word-wrap: break-word;
 }
 
-.Checkbox {
+.checkedTaskString {
+  color: #959595;
+  text-decoration: line-through;
+}
+
+.checkbox {
   margin: 0 8px;
 }
 
-.Checkbox:hover {
+.checkbox:hover {
   cursor: pointer;
 }
 
-.InputText {
+.inputText {
   border: 2px solid #b0b0b0;
   border-radius: 5px;
   padding: 2px 5px;
@@ -45,12 +50,12 @@
   height: 15px;
 }
 
-.InputText:focus {
+.inputText:focus {
   outline: none;
   border: 2px solid #616161;
 }
 
-.Button {
+.button {
   background-color: #848484;
   border: none;
   border-radius: 5px;
@@ -60,16 +65,16 @@
   height: 20px;
 }
 
-.TaskCreator
-.Button {
+.taskCreator
+.button {
   margin: 0 9px 13px 10px;
 }
 
-.Button:hover  {
+.button:hover  {
   background-color: #6d6d6d;
   cursor: pointer;
 }
 
-.Button:focus {
+.button:focus {
   outline: none;
 }
