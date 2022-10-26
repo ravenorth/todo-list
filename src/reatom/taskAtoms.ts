@@ -19,7 +19,7 @@ const defaultList: Array<TaskType> = [
 ];
 
 export const tasksAtom = declareAtom(defaultList, on => [
-  on(delTask, (state: Array<TaskType>, index: number) => state.filter((task, i) => i != index)),
+  on(delTask, (state: Array<TaskType>, index: number) => state.filter((task, i) => i !== index)),
   on(addTask, (state: Array<TaskType>, task: TaskType) => [task, ...state]),
   on(changeTask, (state: Array<TaskType>, index: number) => changeItem(state, index)),
 ]);

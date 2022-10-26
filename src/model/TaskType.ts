@@ -1,4 +1,4 @@
 export type TaskType = {
-    str: string,
-    isChecked: boolean,
-  };
+  str: string,
+  isChecked: boolean,
+};

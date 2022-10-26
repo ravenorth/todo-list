@@ -4,6 +4,15 @@ import { TaskType } from '../model/TaskType';
 import { useAction } from '@reatom/react';
 import { changeTask, delTask } from '../reatom/taskActions';
 
+function getStringStyle(isChecked: boolean): string {
+  const defaultStyle = styles.taskString;
+  if (isChecked) {
+    return defaultStyle + " " + styles.checkedTaskString;
+  } else {
+    return defaultStyle;
+  }
+}
+
 interface TaskProps {
   task: TaskType,
   index: number,
@@ -20,15 +29,10 @@ export function Task(props: TaskProps) {
     [props]
   );
 
-  let labelStyle: string = styles.taskString;
-  if (props.task.isChecked) {
-    labelStyle = labelStyle + " " + styles.checkedTaskString;
-  }
-
   return (
     <div className={styles.task}>
       <input type="checkbox" onChange={handleChange} defaultChecked={props.task.isChecked} className={styles.checkbox} />
-      <label className={labelStyle}>{props.task.str}</label>
+      <label className={getStringStyle(props.task.isChecked)}>{props.task.str}</label>
       <button onClick={handleDel} className={styles.button}>del</button>
     </div>
   );
