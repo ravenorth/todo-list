@@ -1,4 +1,5 @@
-import { declareAction, declareAtom } from '@reatom/core'
+import { declareAtom } from '@reatom/core'
+import { delTask, addTask, changeTask } from './actions'
 
 function removeItem(arr, i) { 
   if (i >= 0) {
@@ -19,10 +20,6 @@ function changeItem(arr, i, task) {
     return [removed, ...arr];
   }
 }
-
-export const delTask = declareAction();
-export const addTask = declareAction();
-export const changeTask = declareAction();
 
 // const startList = [
 //   {str: "11", isChecked: false},

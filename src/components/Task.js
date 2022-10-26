@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./Styles.module.css"
 import { useAction } from '@reatom/react'
-import { delTask, changeTask } from './atoms';
+import { delTask, changeTask } from '../reatom/actions';
 
 function TaskText(props) {
   if (props.task.isChecked)

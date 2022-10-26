@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import styles from "./Styles.module.css"
 import { useAction } from '@reatom/react'
-import { addTask } from './atoms';
+import { addTask } from '../reatom/actions';
 
 export function TaskCreator() {
   const [inputStr, setInputStr] = useState("");
